@@ -26,6 +26,7 @@
         <jxr.version>3.0.0</jxr.version>
         <checkstyle.version>3.1.2</checkstyle.version>
         <surefire.report.version>3.0.0-M5</surefire.report.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
     </properties>
     <dependencies>
         <dependency>
@@ -54,6 +55,15 @@
                 <version>${javafx.maven.version}</version>
                 <configuration>
                     <mainClass>${exec.mainClass}</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
         </plugins>
