@@ -7,9 +7,17 @@
     <groupId>org.example</groupId>
     <artifactId>maze-game</artifactId>
     <version>1.0</version>
-
+    <developers>
+        <developer>
+            <id>gergelyn</id>
+            <name>Gergely Nagy</name>
+            <email>preszthegas@gmail.com</email>
+        </developer>
+    </developers>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
+        <exec.mainClass>mazegame.Main</exec.mainClass>
     </properties>
 </project>
