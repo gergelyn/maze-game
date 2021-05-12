@@ -17,6 +17,7 @@
     </developers>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
         <exec.mainClass>mazegame.Main</exec.mainClass>
@@ -29,8 +30,14 @@
         <surefire.report.version>3.0.0-M5</surefire.report.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <shade.version>3.2.4</shade.version>
+        <lombok.version>1.18.16.0</lombok.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok-maven</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
